@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "446696784601",
+    "firebase_url": "https://repropal-39eb6.firebaseio.com",
+    "project_id": "repropal-39eb6",
+    "storage_bucket": "repropal-39eb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446696784601:android:f2e9b4fd0e5829f5f734c8",
+        "android_client_info": {
+          "package_name": "com.repropal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446696784601-upqnholkflvm80vft5ah7van2hcjvf7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.repropal",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "446696784601-mjsfh7q4c5su56op12qouvqcerooodof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdHx_vKOnFrcA9QCYAxL8njrtvAzjKewk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446696784601-mjsfh7q4c5su56op12qouvqcerooodof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
