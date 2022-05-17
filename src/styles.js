@@ -28,7 +28,7 @@ export default StyleSheet.create({
 
    whiteText: { color: '#fff' },
    fs20: { fontSize: 20 },
-
+   p5: { padding: 5 },
    socialLogin: {
       marginVertical: 20,
    },
@@ -59,4 +59,7 @@ export default StyleSheet.create({
    tabs: {
       color: COLORS.BASEGRAY, //"rgb(132,132,132)",
    },
+   header1: {
+      color: COLORS.WHITE,
+   }
 });

@@ -9,7 +9,7 @@ import NewAnimal from 'screens/NewAnimal';
 export default function Animals(props) {
    const [myAnimals, setMyAnimals] = useState([]);
 
-   const AnimalsStack = createStackNavigator();
+   const AnimalsStack = createNativeStackNavigator();
    const stackOptions = {
       headerStyle: {
          backgroundColor: COLORS.BASEGREEN,

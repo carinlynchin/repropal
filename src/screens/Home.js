@@ -15,17 +15,19 @@ export default function Home() {
 
    function Dashboard() {
       return (
-         <View style={globalStyles.baseBackground}>
-            <Text>Welcome {user.displayName}</Text>
+         <View style={{flex: 1, ...globalStyles.baseBackground}}>
+            <Text style={{...globalStyles.header1, ...globalStyles.p5}}>Welcome {user.displayName}</Text>
          </View>
       );
    }
 
    return (
       <Tab.Navigator
+         backBehavior="history"
          screenOptions={{
             activeTintColor: COLORS.BASEGREEN,
             inactiveTintColor: COLORS.BASEGRAY,
+            headerShown: false,
          }}
       >
          <Tab.Screen

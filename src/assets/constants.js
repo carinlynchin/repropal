@@ -4,4 +4,5 @@ export const COLORS = {
    BASEGRAY: 'rgb(132, 132, 132)',
    PRESSGREEN: '#678A00',
    DISABLEDGRAY: '#BEBEBE',
+   WHITE: '#FFF',
 }
