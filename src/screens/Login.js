@@ -82,7 +82,7 @@ export default function Login(props) {
    }
 
   return (
-    <KeyboardAvoidingView style={styles.container}>
+    <KeyboardAvoidingView style={styles.container, globalStyles.baseBackground}>
         <Animated.View style={{transform: [{ translateY: slideAnim }]}}>
             <Logo/>
             <Animated.View style={{opacity: fadeAnim}}>
@@ -153,7 +153,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: COLORS.BASEBLUE, //'#06395A', //0A4267
     },
     logo: {
         width: 300

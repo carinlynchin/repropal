@@ -2,6 +2,9 @@ import { StyleSheet } from 'react-native';
 import { COLORS } from 'assets/constants';
 
 export default StyleSheet.create({
+   baseBackground: {
+      backgroundColor: COLORS.BASEBLUE, //'#06395A', //0A4267
+   },
    greenButton: {
       backgroundColor: COLORS.BASEGREEN, //'#91B42A',
       justifyContent: 'center',

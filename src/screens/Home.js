@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import auth from '@react-native-firebase/auth';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -13,9 +13,9 @@ const Tab = createBottomTabNavigator();
 export default function Home() {
    const [user, setUser] = useState(auth().currentUser);
 
-   function HomeScreen() {
+   function Dashboard() {
       return (
-         <View>
+         <View style={globalStyles.baseBackground}>
             <Text>Welcome {user.displayName}</Text>
          </View>
       );
@@ -23,16 +23,16 @@ export default function Home() {
 
    return (
       <Tab.Navigator
-         tabBarOptions={{
+         screenOptions={{
             activeTintColor: COLORS.BASEGREEN,
             inactiveTintColor: COLORS.BASEGRAY,
          }}
       >
          <Tab.Screen
-            name="Home"
-            component={HomeScreen}
+            name="Dashboard"
+            component={Dashboard}
             options={{
-               title: 'Home',
+               title: 'Dashboard',
                tabBarIcon: ({ color, size }) => (
                   <FontAwesomeIcon icon={faHome} style={{color: color}} size={size} />
                )
@@ -51,3 +51,9 @@ export default function Home() {
       </Tab.Navigator>
    );
 }
+
+const styles = StyleSheet.create({
+    background: {
+        backgroundColor: COLORS.BASEBLUE, //'#06395A', //0A4267
+    }
+});
